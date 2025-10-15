@@ -8,8 +8,8 @@ On your external SSD / Pendrive create fat32 partition sized 512mb and ext4 labe
 4. ```sudo su```
 0. ```mkdir /mnt/bootps4```
 0. ```mount /dev/sdx1 /mnt/bootps4```
-0. ```wget https://github.com/centi07/gentoo-ps4/raw/refs/heads/main/initramfs-bzimage/initramfs.cpio.gz -o /mnt/bootps4/initramfs.cpio.gz```
-0. ```wget https://github.com/centi07/gentoo-ps4/raw/refs/heads/main/initramfs-bzimage/bzImage -o /mnt/bootps4/bzImage```
+0. ```curl -o /mnt/bootps4/initramfs.cpio.gz https://github.com/centi07/gentoo-ps4/raw/refs/heads/main/initramfs-bzimage/initramfs.cpio.gz```
+0. ```curl -o /mnt/bootps4/bzImage https://github.com/centi07/gentoo-ps4/raw/refs/heads/main/initramfs-bzimage/bzImage```
 0. ```umount /dev/sdx2```
 5. ```mkdir /mnt/gentoo```
 6. ```mount /dev/sdx2 /mnt/gentoo```
@@ -24,12 +24,12 @@ wait for extracting file into new root
 14. ```mount --bind /run /mnt/gentoo/run```
 15. ```mount --make-slave /mnt/gentoo/run```
 16. ```cd /mnt/gentoo```
-17. ```wget https://raw.githubusercontent.com/centi07/gentoo-ps4/refs/heads/main/portage-files/make.conf -o /mnt/gentoo/etc/portage/make.conf```
-18. ```wget https://raw.githubusercontent.com/centi07/gentoo-ps4/refs/heads/main/portage-files/00cpu-flags -o /mnt/gentoo/etc/portage/package.use/00cpu-flags```
-19. ```wget https://raw.githubusercontent.com/centi07/gentoo-ps4/refs/heads/main/portage-files/mesa -o /mnt/gentoo/etc/portage/package.mask/mesa```
-20. ```wget https://raw.githubusercontent.com/centi07/gentoo-ps4/refs/heads/main/portage-files/gentoobinhost.conf -o /mnt/gentoo/etc/portage/binrepos.conf/gentoobinhost.conf```
-22. ```wget https://raw.githubusercontent.com/centi07/gentoo-ps4/refs/heads/main/portage-files/xorg -o /mnt/gentoo/etc/portage/package.use/xorg```
-23. ```wget https://raw.githubusercontent.com/centi07/gentoo-ps4/refs/heads/main/portage-files/ -o /mnt/gentoo/etc/portage/package.use/pipewire```
+17. ```curl -o /mnt/gentoo/etc/portage/make.conf https://raw.githubusercontent.com/centi07/gentoo-ps4/refs/heads/main/portage-files/make.conf```
+18. ```curl -o /mnt/gentoo/etc/portage/package.use/00cpu-flags https://raw.githubusercontent.com/centi07/gentoo-ps4/refs/heads/main/portage-files/00cpu-flags```
+19. ```curl -o /mnt/gentoo/etc/portage/package.mask/mesa https://raw.githubusercontent.com/centi07/gentoo-ps4/refs/heads/main/portage-files/mesa```
+20. ```curl -o /mnt/gentoo/etc/portage/binrepos.conf/gentoobinhost.conf https://raw.githubusercontent.com/centi07/gentoo-ps4/refs/heads/main/portage-files/gentoobinhost.conf```
+22. ```curl -o /mnt/gentoo/etc/portage/package.use/xorg https://raw.githubusercontent.com/centi07/gentoo-ps4/refs/heads/main/portage-files/xorg```
+23. ```curl -o /mnt/gentoo/etc/portage/package.use/pipewire https://raw.githubusercontent.com/centi07/gentoo-ps4/refs/heads/main/portage-files/ ```
 24. ```chroot .```
 25. ```emerge-webrsync```
 26. ```getuto```
@@ -37,7 +37,7 @@ wait for extracting file into new root
 28. ```emerge --ask --verbose eix eselect-repository dev-vcs/git networkmanager```
 29. systemd: ```systemctl enable NetworkManager``` </br>
     openrc: ```rc-update add NetworkManager default```
-30. ```wget https://github.com/feeRnt/ps4-linux-12xx/archive/refs/tags/v6.15.4__wifi_blkscrn.tar.gz -o /usr/src/ps4-linux.tar.gz```
+30. ```curl -o /usr/src/ps4-linux.tar.gz https://github.com/feeRnt/ps4-linux-12xx/archive/refs/tags/v6.15.4__wifi_blkscrn.tar.gz```
 31. ```tar xpf /usr/src/ps4-linux.tar.gz -C /usr/src/```
 32. ```rm /usr/src/ps4-linux.tar.gz```
 33. ```mv /usr/src/ (click tab) /usr/src/ps4-linux``` 
