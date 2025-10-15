@@ -12,7 +12,7 @@ For linux, like debian based distro you need to have brain.
 
 [Short install (only commands)](wiki/short.md)
 
-[Normal install with virtualbox](wiki/normal.md)
+[Normal install with virtualbox](wiki/normal.md) TODO
 
 [Discord PS4Linux](https://discord.com/invite/QtcPmzHVVm) 
 
