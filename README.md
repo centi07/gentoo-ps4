@@ -17,7 +17,7 @@ For linux, like debian based distro you need to have brain.
 [Discord PS4Linux](https://discord.com/invite/QtcPmzHVVm) 
 
 ## Credits:
-mircoho for help with patches and mesa.
-triki1 for contact to mircoho.
-saya for mental help. 
+mircoho for help with patches and mesa. </br>
+triki1 for contact to mircoho. </br>
+saya for mental help. </br>
 [ps4linux](https://ps4linux.com/forums/) community. 
