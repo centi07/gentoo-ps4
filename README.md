@@ -3,7 +3,10 @@
 
 ## You can use wsl or linux machine.
 For wsl you need [usbipd](https://github.com/dorssel/usbipd-win) 
-1. Install wsl from powershell ```wsl --install```
+1. Install wsl from PowerShell ```wsl --install```
+2. Download and install [usbipd](https://github.com/dorssel/usbipd-win) 
+3. Open PowerShell and follow [this steps](wiki/short-for-windows.md)
+
 
 For linux, like debian based distro you need to have brain.
 

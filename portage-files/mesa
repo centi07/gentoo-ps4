@@ -1,0 +1,4 @@
+# mesa gentoo
+media-libs/mesa::gentoo
+x11-libs/libdrm::gentoo
+x11-drivers/xf86-video-amdgpu::gentoo
