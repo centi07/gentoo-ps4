@@ -13,3 +13,11 @@ For linux, like debian based distro you need to have brain.
 [Short install (only commands)](wiki/short.md)
 
 [Normal install with virtualbox](wiki/normal.md)
+
+[Discord PS4Linux](https://discord.com/invite/QtcPmzHVVm) 
+
+## Credits:
+mircoho for help with patches and mesa.
+triki1 for contact to mircoho.
+saya for mental help. 
+[ps4linux](https://ps4linux.com/forums/) community. 

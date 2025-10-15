@@ -1,12 +1,18 @@
 ## First of course, u have to download stage3 file from [gentoo download site](https://www.gentoo.org/downloads/)
+
 In that case, we already have the distribution prepared.
 1. ```sudo apt update && sudo apt upgrade```
 2. ```sudo apt install gparted build-essential wget curl```
 3. ```sudo gparted```  </br>
 On your external SSD / Pendrive create fat32 partition sized 512mb and ext4 labeled psxitarch
 4. ```sudo su```
+0. ```mkdir /mnt/bootps4```
+0. ```mount /dev/sdx1 /mnt/bootps4```
+0. ```wget https://github.com/centi07/gentoo-ps4/raw/refs/heads/main/initramfs-bzimage/initramfs.cpio.gz -o /mnt/bootps4/initramfs.cpio.gz```
+0. ```wget https://github.com/centi07/gentoo-ps4/raw/refs/heads/main/initramfs-bzimage/bzImage -o /mnt/bootps4/bzImage```
+0. ```umount /dev/sdx2```
 5. ```mkdir /mnt/gentoo```
-6. ```mount /dev/sdx /mnt/gentoo```
+6. ```mount /dev/sdx2 /mnt/gentoo```
 7. ```tar xpf {localization of our stagefile} -C /mnt/gentoo --numeric-owner``` </br>
 wait for extracting file into new root  
 8. ```cp /etc/resolv.conf /mnt/gentoo/```
