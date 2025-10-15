@@ -5,4 +5,4 @@ For windows:
 2. ```usbipd attach --wsl --busid {bus_id}```
 ### You should now have your USB device (SSD or Pendrive) connected to your WSL distro
 ### At this point we can move on to the actual guide. For wsl and linux is this same situation.
-### [CLICK ME](wiki/short.md)
+### [CLICK ME](short.md)
