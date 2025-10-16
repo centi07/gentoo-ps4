@@ -18,6 +18,6 @@ For linux, like debian based distro you need to have brain.
 
 ## Credits:
 [mircoho](https://github.com/ps4gentoo) for help with patches and mesa ond overlay fork. </br>
-triki1 for contact to mircoho. </br>
-saya for mental help. </br>
+[triki1](https://ps4linux.com/forums/u/triki1) for contact to mircoho. </br>
+[saya](https://www.youtube.com/channel/UCc20KAcPCj9Ut8IQF3umSjg) for mental help. </br>
 [ps4linux](https://ps4linux.com/forums/) community. 
